@@ -122,6 +122,14 @@ h2 {
   cursor: pointer;
 }
 
+.error {
+  border: 2px solid red !important;
+}
+
+.success {
+  border: 2px solid limegreen !important;
+}
+
 /* ADICIONAR RESPOINSIVIADADE NO SITEEEE */
 
 @media (max-width: 768px) {
