@@ -1,64 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Login Moderno</title>
+    <title>Login Moderno</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <img src="photo-1503614472-8c93d56e92ce.avif" alt="Imagem" />
 
-</head>
-<body>
+      <div class="overlay">
+        <h1>Bem-vindo</h1>
 
-<div class="banner">
+        <p>Interface de login</p>
 
-<img src="photo-1503614472-8c93d56e92ce.avif" alt="Imagem">
+        <button id="loginBtn">Entrar</button>
+      </div>
 
-<div class="overlay">
+      <!-- painel login para apresentar amanhã -->
 
-<h1>Bem-vindo</h1>
+      <div class="drawer" id="drawer">
+        <div class="drawer-content">
+          <button class="close-btn" id="closeBtn">
+            <img
+              src="/form-icons/close-svgrepo-com.svg"
+              alt="Ícone de fechar página"
+            />
+          </button>
 
-<p>Interface de login</p>
+          <h2>Entrar</h2>
 
-<button id="loginBtn">
-Entrar
-</button>
+          <input type="email" id="email" placeholder="Digite seu email" />
 
-</div>
+          <span id="emailError"> </span>
 
+          <input type="password" id="password" placeholder="Digite sua senha" />
 
-<!-- painel login para apresentar amanhã -->
+          <span id="passwordError"></span>
 
-<div class="drawer" id="drawer">
+          <label class="remember">
+            <input type="checkbox" />
 
-<div class="drawer-content">
+            Lembrar de mim
+          </label>
 
-<button class="close-btn" id="closeBtn">
-Fechar
-</button>
+          <button class="entrar">Entrar</button>
+        </div>
+      </div>
 
-<h2>Entrar</h2>
-
-<input type="email" placeholder="Digite seu email">
-
-<input type="password" placeholder="Digite sua senha">
-
-<label class="remember">
-
-<input type="checkbox">
-
-Lembrar de mim
-
-</label>
-
-<button class="entrar">
-Entrar
-</button>
-
-</div>
-
-</div>
-
-
-<script src="script.js"></script>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
